@@ -1,0 +1,308 @@
+{
+  "recommended_threshold": 0.34,
+  "description_required_concepts": [
+    "reference_image",
+    "reverse_analysis",
+    "prompt_output",
+    "ecommerce"
+  ],
+  "positive_concepts": {
+    "reference_image": [
+      "参考图",
+      "主图",
+      "爆款图",
+      "详情页",
+      "详情图",
+      "产品图",
+      "包装图",
+      "基础资料",
+      "整页",
+      "product photo",
+      "detail page",
+      "海报",
+      "竞品图",
+      "这张图",
+      "整条详情长图",
+      "视觉参考",
+      "风格参考",
+      "product image",
+      "reference image"
+    ],
+    "reverse_analysis": [
+      "反推",
+      "拆解",
+      "分析",
+      "复刻",
+      "提取",
+      "照着",
+      "仿照",
+      "设计",
+      "重做",
+      "规划",
+      "策划",
+      "制作",
+      "视觉方案",
+      "补齐",
+      "研究",
+      "视觉灵感",
+      "风格系统",
+      "版式锚",
+      "research",
+      "draft every page",
+      "reverse",
+      "analyze",
+      "deconstruct",
+      "extract"
+    ],
+    "prompt_output": [
+      "提示词",
+      "prompt",
+      "文生图",
+      "ai作图",
+      "ai出图",
+      "生图",
+      "豆包",
+      "设计大纲",
+      "执行稿",
+      "字体排版",
+      "逐屏",
+      "每屏",
+      "绘图",
+      "设计图",
+      "image prompt",
+      "production-ready image prompts",
+      "midjourney",
+      "即梦",
+      "seedream",
+      "stable diffusion"
+    ],
+    "ecommerce": [
+      "电商",
+      "淘宝",
+      "天猫",
+      "亚马逊",
+      "拼多多",
+      "商品",
+      "产品",
+      "卖点",
+      "带货",
+      "ecommerce",
+      "listing",
+      "amazon"
+    ]
+  },
+  "negative_patterns": [
+    "只写详情页文案",
+    "只帮我写文案",
+    "纯文案",
+    "不做视觉",
+    "暂时不要视觉",
+    "不设计详情页",
+    "只识别这张产品图",
+    "抠图",
+    "修图",
+    "翻译",
+    "销售数据",
+    "不用反推",
+    "just translate",
+    "sales data"
+  ],
+  "should_trigger": [
+    {
+      "text": "帮我反推这张电商主图的提示词",
+      "family": "cn_core_reverse"
+    },
+    {
+      "text": "我看中一张爆款主图，想照着做一张类似的，AI作图提示词怎么写",
+      "family": "cn_copy_hot_image"
+    },
+    {
+      "text": "分析这张竞品图的构图和配色，给我可以直接用的AI作图提示词",
+      "family": "cn_competitor_analysis"
+    },
+    {
+      "text": "把这张参考图整理成即梦能用的文生图提示词",
+      "family": "cn_tool_specific"
+    },
+    {
+      "text": "Reverse engineer this ecommerce product image into a reusable AI image prompt",
+      "family": "en_core_reverse"
+    },
+    {
+      "text": "照着这张图的风格，用我自己的产品做一张主图，提示词怎么写",
+      "family": "cn_product_swap"
+    },
+    {
+      "text": "这张详情页海报为什么有点击感？拆解一下并写出复刻用的提示词",
+      "family": "cn_click_logic"
+    },
+    {
+      "text": "上传了一张淘宝主图，帮我提取它的光影、场景和镜头角度，写成豆包能用的生图提示词",
+      "family": "cn_dimension_extract"
+    },
+    {
+      "text": "Analyze this product image and extract a detailed AI image generation prompt I can reuse",
+      "family": "en_extract_prompt"
+    },
+    {
+      "text": "帮我拆解这张带货商品图，反推出同款AI出图提示词",
+      "family": "cn_livestream_image"
+    },
+    {
+      "text": "这是一个淘宝商品链接，帮我反推它主图的提示词",
+      "family": "cn_product_link"
+    },
+    {
+      "text": "拆解这个拼多多链接里的爆款图，反推出提示词照着做一张我的产品",
+      "family": "cn_link_product_swap"
+    },
+    {
+      "text": "用这张产品图帮我重新设计整个电商详情页",
+      "family": "cn_detail_page_redesign"
+    },
+    {
+      "text": "给我的产品做一整套详情页设计图，每屏的提示词也要",
+      "family": "cn_detail_page_full_set"
+    },
+    {
+      "text": "帮我写一张护肤品成分分子图的提示词，放详情页里用",
+      "family": "cn_ingredient_molecular"
+    },
+    {
+      "text": "给我的产品做一套5张淘宝主图，提示词和图都要",
+      "family": "cn_main_image_five_set"
+    },
+    {
+      "text": "我只有产品正反面图、品名和规格，没有详情页方案。请查这个品类用户关心什么，补齐每屏文案并给我整套逐屏生图提示词",
+      "family": "cn_sparse_input_research_full_detail"
+    },
+    {
+      "text": "资料只有包装图和配料表，别问我每页写什么，先核实能用的信息，再从首屏到收尾页规划完整详情页",
+      "family": "cn_sparse_input_autoplan"
+    },
+    {
+      "text": "没有每屏卖点，请根据基础资料和可信公开来源完成事实表、分屏脚本、文案和逐屏绘图提示词",
+      "family": "cn_research_copy_prompt_bundle"
+    },
+    {
+      "text": "某些参数我不确定，能查则查，查不到就标出来不要编，其余部分继续完成整页设计",
+      "family": "cn_missing_fact_safe_continue"
+    },
+    {
+      "text": "I only have a product photo, basic specs and three verified selling points. Research the category, draft every page and write production-ready image prompts",
+      "family": "en_sparse_input_full_detail"
+    },
+    {
+      "text": "目标是抖音食品类，先查当前主图和标签规则，再给我主图与详情页设计提示词",
+      "family": "cn_platform_category_preflight"
+    },
+    {
+      "text": "我只要完整的逐屏绘图提示词，不需要现在生图，按产品资料把每页设计好",
+      "family": "cn_prompt_only_full_production"
+    },
+    {
+      "text": "先给我整套详情页设计大纲，我确认后再一次写完每屏完整生图执行提示词，文字位置、字体、字重和字号都要写清",
+      "family": "cn_detail_outline_then_execution"
+    },
+    {
+      "text": "帮我做商品主图套系，把本周价格、赠品和适用条件直接生成在图里；下周变更时用豆包局部改字",
+      "family": "cn_dynamic_commercial_fields"
+    },
+    {
+      "text": "我在豆包里做详情页，标题、副标题、参数、FAQ、价格和法务都要直接生成在图里，不要无字底图或空卡片",
+      "family": "cn_doubao_complete_text_direct_render"
+    },
+    {
+      "text": "只帮我写完整逐屏生图提示词，不要现在出图，视觉方案和每页文案都要",
+      "family": "cn_only_full_prompts_not_copywriting"
+    },
+    {
+      "text": "直接设计并生成整套商品主图，不需要展示提示词，但要保证产品一致",
+      "family": "cn_full_generation_without_prompt_display"
+    },
+    {
+      "text": "我没有风格参考，请研究适合这个产品的电商版式、摄影和品牌视觉方向，再完成整套逐屏提示词",
+      "family": "cn_visual_inspiration_and_style_system"
+    },
+    {
+      "text": "这是整条竞品详情长图，只学习它的屏序、版式和节奏，拆成版式锚后用我的产品重做每屏",
+      "family": "cn_long_detail_reference_screen_anchors"
+    },
+    {
+      "text": "给我做一套可续跑的商品详情图生产包，要有视觉系统、场景锚、逐图任务清单和完整生图提示词",
+      "family": "cn_project_manifest_and_prompt_compiler"
+    },
+    {
+      "text": "我只上传了一张产品图，没有任何卖点资料。先帮我识别和整体调研，整理卖点信息大纲给我确认，确认后再做详情页设计和生图",
+      "family": "cn_product_image_only_research_selling_outline"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "只帮我写一段商品详情页文案，不做视觉方案、提示词或出图",
+      "family": "copywriting_only"
+    },
+    {
+      "text": "帮我把这张图片抠图换成白底",
+      "family": "image_editing"
+    },
+    {
+      "text": "翻译一下这段英文产品描述",
+      "family": "translate_only"
+    },
+    {
+      "text": "分析一下我店铺上个月的销售数据",
+      "family": "data_analysis"
+    },
+    {
+      "text": "Write a catchy title for my Amazon listing",
+      "family": "en_copywriting"
+    },
+    {
+      "text": "推荐几个好用的AI绘图工具",
+      "family": "tool_recommendation"
+    },
+    {
+      "text": "帮我P掉这张图上的水印",
+      "family": "watermark_removal"
+    },
+    {
+      "text": "帮我看看这个淘宝链接的商品值不值得买",
+      "family": "purchase_advice"
+    },
+    {
+      "text": "搜索果汁行业资料并做竞品研究报告，不设计详情页",
+      "family": "research_report_only"
+    },
+    {
+      "text": "把已有的九张详情图拼成长图并改尺寸",
+      "family": "stitch_existing_images"
+    },
+    {
+      "text": "只识别这张产品图是什么商品并做资料调研报告，不做详情页视觉设计、提示词或生图",
+      "family": "product_image_identification_research_only"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "text": "这张主图好看吗？帮我评价一下",
+      "family": "review_only"
+    },
+    {
+      "text": "帮我直接生成一张白底商品图，不用反推提示词",
+      "family": "direct_generation"
+    },
+    {
+      "text": "优化一下这段midjourney提示词",
+      "family": "text_prompt_optimization"
+    },
+    {
+      "text": "拆解一下这个竞品的营销打法",
+      "family": "marketing_analysis"
+    },
+    {
+      "text": "只帮我策划一下详情页的文案结构，暂时不要视觉设计和绘图提示词",
+      "family": "detail_page_copy_planning"
+    }
+  ]
+}
